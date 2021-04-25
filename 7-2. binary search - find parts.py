@@ -65,4 +65,5 @@
 # # print(binary_search(array, 5, 0, 20))
 # #
 
-a  = set(map(int, input().split()))
+a  =  (map(int, input().split()))
+print (a)
