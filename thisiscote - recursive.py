@@ -24,7 +24,7 @@ def recursive_factorial(n):
 
 while True :
 
-    n = input()
+    n = input() # input a number -> output factorial of the number
     if  n=='a' :
         break
     print(recursive_factorial(int(n)))
