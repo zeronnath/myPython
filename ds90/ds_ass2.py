@@ -12,7 +12,7 @@
 
 ### ds_ass2-2
 
-
+import queue
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -60,3 +60,13 @@ print("실측값 test_y['points'].values=", test_y['points'].values)
 pred_y = np.around(pred_y.flatten()).astype('int')
 mae = mean_absolute_error(test_y, pred_y)
 print("MAE = ", round(mae, 2))
+
+print("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ")
+print("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ")
+import queue
+a = queue.PriorityQueue()
+a.put((10, "캠퍼스"))
+a.put((1, "패스트"))
+a.put((55, "완주반"))
+a.put((11, "온라인"))
+print(''.join([a.get()[1], a.get()[1], a.get()[1], a.get()[1] ]))
