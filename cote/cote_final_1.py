@@ -14,29 +14,29 @@
 # 예시 입력3:
 # 입력: s = 'wabe'
 # 출력: 'waaw'
-#
-# def solution(s):
-#     def is_palindrome(stra):
-#         return stra == stra[::-1]
-#
-#     def make_palindrome(strb):
-#         l: int = len(strb)
-#         m = int(l / 2)
-#         half1 = strb[:m]
-#         return half1 + half1[::-1]
-#
-#     if is_palindrome(s):
-#         return ''
-#     else:
-#         return make_palindrome(s)
-#
-#
-# s = 'abcdcba'
-# print(solution(s))
-# s = 'bannana'
-# print(solution(s))
-# s = 'wabe'
-# print(solution(s))
+
+def solution(s):
+    def is_palindrome(stra):
+        return stra == stra[::-1]
+
+    def make_palindrome(strb):
+        l: int = len(strb)
+        m = int(l / 2)
+        half1 = strb[:m]
+        return half1 + half1[::-1]
+
+    if is_palindrome(s):
+        return ''
+    else:
+        return make_palindrome(s)
+
+
+s = 'abcdcba'
+print(solution(s))
+s = 'bannana'
+print(solution(s))
+s = 'wabe'
+print(solution(s))
 
 ### final-2
 

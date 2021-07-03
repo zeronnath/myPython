@@ -41,6 +41,7 @@
 
 from bisect import bisect_left, bisect_right
 
+
 def solution(words, queries):
     def count_by_range(a, left_val, right_val):
         right_idx = bisect_right(a, right_val)
@@ -49,7 +50,6 @@ def solution(words, queries):
 
     array = [[] for _ in range(10001)]
     reversed_array = [[] for _ in range(10001)]
-
 
     answer = []
     for word in words:
@@ -70,6 +70,6 @@ def solution(words, queries):
     return answer
 
 
-words = ["frodo", "front", "frost", "frozen", "frame", "kakao"]
-queries = ["fro??", "????o", "fr???", "fro???", "pro?"]
-print(solution(words, queries))
+words1 = ["frodo", "front", "frost", "frozen", "frame", "kakao"]
+queries1 = ["fro??", "????o", "fr???", "fro???", "pro?"]
+print(solution(words1, queries1))
